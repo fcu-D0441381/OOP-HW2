@@ -6,6 +6,8 @@ public class StringComparator {
 	{
 		String a,b;
 		Scanner keyin = new Scanner(System.in);
+		do
+		{
 		System.out.println("Enter a string 1:");
 		a=keyin.nextLine();
 		System.out.println("Enter a string 2:");
@@ -18,6 +20,7 @@ public class StringComparator {
 		{
 			System.out.println("The two strings are not the same.");
 		}
+		}while(a.compareToIgnoreCase(b)!=0);
 	}
 
 }
